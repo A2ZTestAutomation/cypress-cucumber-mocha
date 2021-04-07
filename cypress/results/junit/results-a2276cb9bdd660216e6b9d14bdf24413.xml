@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.2950" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-04-07T11:03:24" tests="0" file="cypress\integration\cucumber-tests\login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login to Demo App" timestamp="2021-04-07T11:03:24" tests="2" time="10.2950" failures="1">
+    <testcase name="Login to Demo App Invalid Login" time="0.0000" classname="Invalid Login">
+      <failure message="Timed out retrying after 5000ms: Expected to find content: &apos;Failed Login&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Failed Login' but never did.
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:143:31)
+    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:10591:9)
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:9934:35)]]></failure>
+    </testcase>
+    <testcase name="Login to Demo App Valid Login" time="10.2950" classname="Valid Login">
+    </testcase>
+  </testsuite>
+</testsuites>

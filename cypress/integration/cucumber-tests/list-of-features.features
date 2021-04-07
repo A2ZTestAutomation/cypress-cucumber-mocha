@@ -1,0 +1,26 @@
+Feature: Login to Demo App
+    As a invalid user I cannot login into application
+    As a valid user  I want to login into application
+    Scenario: Invalid Login
+        Given User is on Login page
+        When User enter username "invalid username"
+        And User enter password "invalid password"
+        And User click submit
+        Then Should display error message
+
+    #  @focus
+    Scenario: Valid Login
+        Given User is on Login page
+        When User enter username "username"
+        And User enter password "password"
+        And User click submit
+        Then Should display home page
+
+Feature: Send Feedback as Message
+    As a customer I want to send feedback.
+    Scenario: Submit Feedback form
+        Given  Open feedback form
+        When Enter feedback details
+        And Click  send message button
+        # Use Common step to check url from common.js
+        Then check 'sendFeedback.html' in the url

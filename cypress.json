@@ -1,0 +1,12 @@
+{
+	"video": false,
+	"defaultCommandTimeout": 5000,
+	"pageLoadTimeout": 10000,
+	"ignoreTestFiles": ["*.js", "*.md"],
+	"testFiles":"**/*.{feature, features}",
+	"screenshotsFolder":"TestResults/assets",
+	"reporter": "cypress-multi-reporters",
+	"reporterOptions": {
+	  "configFile": "reporter-config.json"
+	}
+}

@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-07T10:18:51.786Z",
+    "end": "2021-04-07T10:19:20.212Z",
+    "duration": 28426,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7f16d7d-d564-48a7-b5bb-f1fe0f789b0e",
+      "title": "",
+      "fullFile": "cypress\\integration\\cucumber-tests\\login.feature",
+      "file": "cypress\\integration\\cucumber-tests\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5fa71099-0fd3-4db6-a8cf-f66c2829a2d8",
+          "title": "Login to Demo App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Invalid Login",
+              "fullTitle": "Login to Demo App Invalid Login",
+              "timedOut": null,
+              "duration": 11259,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"F:\\\\Anandhi\\\\workspace\\\\cypressWorkspace\\\\sample-cy-cucumber\\\\TestResults\\\\assets/cucumber-tests\\\\login.feature/Login to Demo App -- Invalid Login (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:156855:13)\n    at http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:157843:16\n    at tryCatcher (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:10325:23)\n    at http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5447:41\n    at tryCatcher (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:125:6)\n    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:10589:9)\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:9931:35)\nFrom Your Spec Code:\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:125:6)\n    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:10589:9)\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:9931:35)",
+                "diff": null
+              },
+              "uuid": "0a3cb2a3-12e3-468f-9ec4-a212271d8b40",
+              "parentUUID": "5fa71099-0fd3-4db6-a8cf-f66c2829a2d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Valid Login",
+              "fullTitle": "Login to Demo App Valid Login",
+              "timedOut": null,
+              "duration": 9664,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9c2f727b-6243-4897-bb15-1e89ed033a33",
+              "parentUUID": "5fa71099-0fd3-4db6-a8cf-f66c2829a2d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9c2f727b-6243-4897-bb15-1e89ed033a33"
+          ],
+          "failures": [
+            "0a3cb2a3-12e3-468f-9ec4-a212271d8b40"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20923,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="13.5900" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-04-07T10:18:22" tests="0" file="cypress\integration\cucumber-tests\feedback.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Send Feedback as Message" timestamp="2021-04-07T10:18:22" tests="1" time="13.5900" failures="0">
+    <testcase name="Send Feedback as Message Submit Feedback form" time="13.5900" classname="Submit Feedback form">
+    </testcase>
+  </testsuite>
+</testsuites>

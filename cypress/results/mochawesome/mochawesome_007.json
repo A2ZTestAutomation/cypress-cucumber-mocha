@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-07T11:03:24.739Z",
+    "end": "2021-04-07T11:03:54.952Z",
+    "duration": 30213,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "13a67a22-8e43-4f32-b061-1fa07f19c50d",
+      "title": "",
+      "fullFile": "cypress\\integration\\cucumber-tests\\login.feature",
+      "file": "cypress\\integration\\cucumber-tests\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c764483d-245f-4f0e-8895-213e9e08b1ed",
+          "title": "Login to Demo App",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Invalid Login",
+              "fullTitle": "Login to Demo App Invalid Login",
+              "timedOut": null,
+              "duration": 14378,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"F:\\\\Anandhi\\\\workspace\\\\cypressWorkspace\\\\sample-cy-cucumber\\\\TestResults\\\\assets/cucumber-tests\\\\login.feature/Login to Demo App -- Invalid Login (failed).png\"",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Failed Login' but never did.",
+                "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'Failed Login' but never did.\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:143:31)\n    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:10591:9)\n    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\\integration\\cucumber-tests\\login.feature:9934:35)",
+                "diff": null
+              },
+              "uuid": "17ef6006-9985-4c37-86d2-de83631e393c",
+              "parentUUID": "c764483d-245f-4f0e-8895-213e9e08b1ed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Valid Login",
+              "fullTitle": "Login to Demo App Valid Login",
+              "timedOut": null,
+              "duration": 10295,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b79edd34-538e-49eb-a8c6-43144e2bf1ba",
+              "parentUUID": "c764483d-245f-4f0e-8895-213e9e08b1ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b79edd34-538e-49eb-a8c6-43144e2bf1ba"
+          ],
+          "failures": [
+            "17ef6006-9985-4c37-86d2-de83631e393c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24673,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

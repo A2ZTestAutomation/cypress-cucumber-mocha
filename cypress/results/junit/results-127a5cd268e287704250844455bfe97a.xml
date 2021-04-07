@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.6640" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-04-07T10:18:51" tests="0" file="cypress\integration\cucumber-tests\login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login to Demo App" timestamp="2021-04-07T10:18:51" tests="2" time="9.6640" failures="1">
+    <testcase name="Login to Demo App Invalid Login" time="0.0000" classname="Invalid Login">
+      <failure message="Timed out after waiting `10000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `10000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands." type="CypressError"><![CDATA[CypressError: Timed out after waiting `10000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `10000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+    at timedOutWaitingForPageLoad (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:156855:13)
+    at http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:157843:16
+    at tryCatcher (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:10325:23)
+    at http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5447:41
+    at tryCatcher (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:10325:23)
+    at Promise._settlePromiseFromHandler (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8260:31)
+    at Promise._settlePromise (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8317:18)
+    at Promise._settlePromise0 (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8362:10)
+    at Promise._settlePromises (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:8438:18)
+    at _drainQueueStep (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5032:12)
+    at _drainQueue (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5025:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:5041:5)
+    at Async.drainQueues (http://zero.webappsecurity.com/__cypress/runner/cypress_runner.js:4911:14)
+From Your Spec Code:
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:125:6)
+    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:10589:9)
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:9931:35)
+From Your Spec Code:
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:125:6)
+    at Context.resolveAndRunStepDefinition (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:10589:9)
+    at Context.eval (http://zero.webappsecurity.com/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:9931:35)]]></failure>
+    </testcase>
+    <testcase name="Login to Demo App Valid Login" time="9.6640" classname="Valid Login">
+    </testcase>
+  </testsuite>
+</testsuites>

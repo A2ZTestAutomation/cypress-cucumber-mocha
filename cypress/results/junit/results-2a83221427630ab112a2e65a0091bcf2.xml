@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="17.7480" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-04-07T10:52:12" tests="0" file="cypress\integration\cucumber-tests\login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login to Demo App" timestamp="2021-04-07T10:52:12" tests="2" time="17.7480" failures="0">
+    <testcase name="Login to Demo App Invalid Login" time="8.9350" classname="Invalid Login">
+    </testcase>
+    <testcase name="Login to Demo App Valid Login" time="8.8130" classname="Valid Login">
+    </testcase>
+  </testsuite>
+</testsuites>
